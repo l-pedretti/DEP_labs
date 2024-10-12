@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class UserModelImpl { //avoid to use 'user' as Class name or it will cause errors to User table being created in Postgres
+public class UserModelImpl implements UserModel { //avoid to use 'user' as Class name or it will cause errors to User table being created in Postgres
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
-public class UserControllerImpl {
+public class UserControllerImpl implements UserController {
     private static final Logger LOG = LoggerFactory.getLogger(UserControllerImpl.class);
 
     @Autowired
